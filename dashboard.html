@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard - LeadDrive</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="app-container">
+      <header class="app-header">
+        <div class="header-left">
+          <div class="logo"><h1>LeadDrive</h1></div>
+          <nav class="main-nav">
+            <ul>
+              <li><a href="index.html">Leads</a></li>
+              <li><a href="dashboard.html" class="active">Dashboard</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="user-profile">
+          <span>Business Manager</span>
+          <img src="https://i.pravatar.cc/40?u=manager" alt="User Avatar" />
+        </div>
+      </header>
+
+      <main class="main-content">
+        <div class="dashboard-toolbar">
+          <h2>Performance Dashboard</h2>
+          <div class="date-filter">
+            <label for="date-range">Date Range:</label>
+            <select name="date-range" id="date-range">
+              <option value="quarter">This Quarter</option>
+              <option value="month">Last 30 Days</option>
+              <option value="week">Last 7 Days</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="dashboard-grid">
+          <div class="kpi-card">
+            <span class="kpi-title">Total Leads</span>
+            <span class="kpi-value">450</span>
+          </div>
+          <div class="kpi-card">
+            <span class="kpi-title">Conversion Rate</span>
+            <span class="kpi-value">12.5%</span>
+          </div>
+          <div class="kpi-card">
+            <span class="kpi-title">Avg. Lead Score</span>
+            <span class="kpi-value">6.8 / 10</span>
+          </div>
+          <div class="kpi-card">
+            <span class="kpi-title">Avg. Time to Contact</span>
+            <span class="kpi-value">4.2 Hours</span>
+          </div>
+
+          <div class="chart-card large">
+            <h3>Lead Conversion Funnel</h3>
+            <div class="chart-placeholder">[Funnel Chart Placeholder]</div>
+          </div>
+          <div class="chart-card large">
+            <h3>Leads by Source</h3>
+            <div class="chart-placeholder">[Pie Chart Placeholder]</div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

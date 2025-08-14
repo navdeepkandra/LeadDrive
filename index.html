@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LeadDrive - Lead Management</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/your-fontawesome-kit.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <script src="script.js"></script>
+  <body>
+    <div class="app-container">
+      <header class="app-header">
+        <div class="header-left">
+          <div class="logo"><h1>LeadDrive</h1></div>
+          <nav class="main-nav">
+            <ul>
+              <li><a href="index.html" class="active">Leads</a></li>
+              <li><a href="dashboard.html">Dashboard</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="user-profile">
+          <span>Sales Team</span>
+          <img src="https://i.pravatar.cc/40" alt="User Avatar" />
+        </div>
+      </header>
+
+      <main class="main-content">
+        <div class="toolbar">
+          <div class="search-container">
+            <input
+              type="text"
+              placeholder="Search by name, phone, or email..."
+            />
+          </div>
+          <div class="filters-container">
+            <select name="status">
+              <option value="">All Statuses</option>
+              <option value="new">New</option>
+              <option value="contacted">Contacted</option>
+              <option value="qualified">Qualified</option>
+              <option value="not-interested">Not Interested</option>
+            </select>
+            <select name="source">
+              <option value="">All Sources</option>
+              <option value="website">Website</option>
+              <option value="facebook">Facebook</option>
+              <option value="google">Google</option>
+              <option value="offline">Offline</option>
+            </select>
+            <button class="btn-new-lead">+ New Lead</button>
+          </div>
+        </div>
+
+        <div class="lead-table-container">
+          <table class="lead-table">
+            <thead>
+              <tr>
+                <th>Lead Score</th>
+                <th>Lead Name</th>
+                <th>Source</th>
+                <th>Status</th>
+                <th>Date Added</th>
+                <th>Assigned To</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="lead-row">
+                <td><span class="score score-high">9/10</span></td>
+                <td>Aarav Sharma</td>
+                <td>Website</td>
+                <td><span class="status-tag status-new">New</span></td>
+                <td>Aug 14, 2025</td>
+                <td>Navdeep C</td>
+              </tr>
+              <tr class="lead-row">
+                <td><span class="score score-medium">6/10</span></td>
+                <td>Priya Patel</td>
+                <td>Google</td>
+                <td>
+                  <span class="status-tag status-contacted">Contacted</span>
+                </td>
+                <td>Aug 13, 2025</td>
+                <td>Sales Rep B</td>
+              </tr>
+              <tr class="lead-row">
+                <td><span class="score score-high">8/10</span></td>
+                <td>Rohan Mehta</td>
+                <td>Website</td>
+                <td>
+                  <span class="status-tag status-qualified">Qualified</span>
+                </td>
+                <td>Aug 12, 2025</td>
+                <td>Navdeep C</td>
+              </tr>
+              <tr class="lead-row">
+                <td><span class="score score-low">3/10</span></td>
+                <td>Sneha Reddy</td>
+                <td>Facebook</td>
+                <td>
+                  <span class="status-tag status-not-interested"
+                    >Not Interested</span
+                  >
+                </td>
+                <td>Aug 11, 2025</td>
+                <td>Sales Rep C</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
